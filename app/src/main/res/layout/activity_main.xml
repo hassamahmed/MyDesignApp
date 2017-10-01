@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.test.mydesignapp.MainActivity"
+    android:background="@drawable/gradient">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/logo" />
+        </RelativeLayout>
+
+        <EditText
+            style="@style/EditText_style"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@mipmap/ic_launcher_user"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="Username"/>
+        <EditText
+            style="@style/EditText_style"
+            android:drawableLeft="@mipmap/ic_launcher_pass"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:textColorHint="#FFFFFF"
+            android:hint="Password"/>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Login"
+            android:textColor="@android:color/background_light"
+            android:onClick="next"/>
+    </LinearLayout>
+</RelativeLayout>
